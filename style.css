@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.navbar {
+    background-color: #eaeaea !important;
+}
+.logo {
+    width: 125px;
+}
+.nav-link {
+    color: #000000 !important;
+    font-size: 1.05rem;
+}
+.carousel-inner {
+    height: 85vh;
+    position: relative;
+}
+.carousel-item::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.carousel-item img {
+    height: 650px;
+    object-fit: cover;
+}
+.carousel-indicators button {
+    margin-bottom: 10px;
+}
+.carousel-caption {
+    padding-bottom: 75px;
+}
+.carousel-caption h5 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.carousel-caption p {
+    font-size: 1.25rem;
+}
+
+.navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-toggler-icon i {
+    font-size: 2.25rem;
+}
+.navbar-toggler {
+    border: 2px solid black;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+.line {
+    height: 1px;
+    width: 300px;
+    background-color: #acacac;
+    margin-bottom: 20px;
+}
+.f-logo {
+    filter: invert(100%);
+}
+.contact {
+    width: 25%;
+}
+footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 770.9px) {
+    .carousel-item img {
+        object-fit: cover;
+    }
+    .carousel-indicators button {
+        margin-bottom: 10px;
+    }
+    .carousel-caption {
+        padding-bottom: 150px;
+    }
+    .carousel-caption h5 {
+        font-size: 1.85rem;
+    }    
+    .carousel-caption p {
+        font-size: 1.1rem;
+    }
+    footer {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .company,.main-links,.more-links,.contact {
+        width: auto;
+    }    
+}
+
+
+@media screen and (max-width: 432.9px) {
+    .logo {
+        width: 100px;
+    }
+    .carousel-inner {
+        height: 70vh;
+    }
+    .carousel-item img {
+        height: 440px;
+    }
+    .carousel-caption {
+        padding-bottom: 35px;
+    }
+    .carousel-caption h5 {
+        font-size: 1.4rem;
+    }    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-indicators button {
+        margin-bottom: 190px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        padding-bottom: 150px;
+    } 
+    .about {
+        margin-top: -90px !important;
+    }
+    .company img {
+        height: 40px;
+    } 
+    .contact {
+        margin-top: 20px;
+    } 
+}
